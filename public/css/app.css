@@ -34,7 +34,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-sans-serif: "Open Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -66,7 +66,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -6375,7 +6375,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -6500,7 +6500,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -10902,5 +10902,95 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #13161f;
+}
+
+#example {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#example .sidebar {
+  background: #2a2b2d;
+  padding: 2em 3em;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  height: calc(100vh - 55px);
+}
+
+#example .sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
+#example .sidebar ul li {
+  list-style: none;
+  margin-bottom: 1.5em;
+}
+
+#example .sidebar ul li a {
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+#example .sidebar ul li a span {
+  color: #bebebe;
+  margin-right: 0.5em;
+}
+
+.movies-list {
+  width: 100%;
+  padding: 2em 2em 2em 264px;
+}
+
+.movies-list h1 {
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 1em;
+}
+
+.movies-list .main-content {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.movies-list .main-content .movie {
+  width: 17em;
+  position: relative;
+}
+
+.movies-list .main-content .movie .fav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fdd835;
+  font-size: 1.3em;
+}
+
+.movies-list .main-content .movie .fav:hover {
+  color: #ffeb3b;
+}
+
+.movies-list .main-content .movie img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+.movies-list .main-content .movie h4 {
+  color: #f0f0f0;
 }
 

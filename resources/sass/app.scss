@@ -6,3 +6,75 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #13161f;
+}
+
+#example{
+	@include row-bt();
+	.sidebar{
+	    background: #2a2b2d;
+	    padding: 2em 3em;
+	    position: fixed;
+	    top: 55px;
+	    left: 0;
+	    height: calc(100vh - 55px);
+		ul{
+			padding: 0;
+			margin:0;
+			li{
+				list-style: none;
+				margin-bottom: 1.5em;
+				a{
+					color:$blanco;
+					font-weight: 600;
+					span{
+						color:#bebebe;
+						margin-right: 0.5em;
+					}
+				}
+			}
+		}
+	}
+}
+
+.movies-list{
+	width: 100%;
+    padding: 2em 2em 2em 264px;
+    h1{
+    	font-weight: 600;
+    	color:$blanco;
+    	margin-bottom: 1em;
+    }
+    .main-content{
+    	@include row-bt();
+    	margin-top: 1em;
+    	.movie{
+    		width: 17em;
+    		position: relative;
+    		.fav{
+				position: absolute;
+			    top: 10px;
+			    left: 10px;
+			    color: #fdd835;
+			    font-size: 1.3em;
+			    &:hover{
+			    	color: #ffeb3b;
+			    }
+    		}
+    		img{
+    			width: 100%;
+    			border-radius: 6px;
+    			margin-bottom: 1em;
+    		}
+    		h4{
+    			color:$blanco;
+    		}
+    	}
+    }
+}

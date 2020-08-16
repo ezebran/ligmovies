@@ -12,8 +12,19 @@
     </head>
     <body>
 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div className="card">
+                        <div class="card-header row justify-content-center"><a href="login"> Log In</a></div>
 
-            <div id="example"></div>
+                        <div class="card-body row justify-content-center"><a href="register">Register</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
 
 
     </body>
