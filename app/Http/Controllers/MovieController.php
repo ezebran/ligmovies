@@ -28,7 +28,8 @@ class MovieController extends Controller
     //Read
     public function read(){
     	$movies = DB::table('movies')
-    	->select('*')
+        ->join('actors', 'movies.ActorPrincipalID', '=', 'actors.id')
+    	->select('movies.*','actors.nombre')
     	->get();
 
     	return response()->json($movies, 201);

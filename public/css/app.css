@@ -10994,3 +10994,37 @@ body {
   color: #f0f0f0;
 }
 
+.movies-crud {
+  width: 100%;
+  padding: 2em 2em 2em 264px;
+}
+
+.movies-crud h1 {
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 1em;
+}
+
+.movies-crud .main-content {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  background: #1e2448;
+  padding: 4em;
+  border-radius: 5px;
+}
+
+.movies-crud .main-content table {
+  color: #fff;
+}
+
+.movies-crud .main-content table thead {
+  background: #212529;
+}
+
+.movies-crud .main-content table thead tr th {
+  border-bottom: none;
+}
+

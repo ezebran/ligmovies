@@ -78,3 +78,31 @@ body{
     	}
     }
 }
+
+.movies-crud{
+	width: 100%;
+    padding: 2em 2em 2em 264px;
+    h1{
+    	font-weight: 600;
+    	color:$blanco;
+    	margin-bottom: 1em;
+    }
+    .main-content{
+    	@include row-bt();
+    	margin-top: 1em;
+	    background: #1e2448;
+	    padding: 4em;
+	    border-radius: 5px;
+	    table{
+	    	color:$white;
+	    	thead{
+	    		background: #212529;
+	    		tr{
+	    			th{
+	    				border-bottom:none;
+	    			}
+	    		}
+	    	}
+	    }
+    }
+}
