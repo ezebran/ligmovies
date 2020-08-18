@@ -20,7 +20,7 @@ class CreateFavoritesTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
 
             $table->integer('movie_id')->unsigned();
-            $table->foreign('movie_id')->references('id')->on('movies');
+            $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade');
 
             $table->timestamps();
         });

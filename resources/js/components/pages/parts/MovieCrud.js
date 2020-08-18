@@ -1,6 +1,9 @@
 import React from 'react';
+import { Button ,Modal } from 'react-bootstrap';
 
 function MovieCrud(props){
+
+
 	return(
 		<React.Fragment>
 
@@ -8,8 +11,8 @@ function MovieCrud(props){
 		    	<td>{props.movie.titulo}</td>
 		    	<td>{props.movie.nombre}</td>
 		    	<td>
-		      		<button type="button" class="btn btn-danger">Eliminar</button>
-		      		<button type="button" class="btn btn-info">Editar</button>
+		      		<Button onClick={()=>{this.props.handleModal()}}>Eliminar</Button>
+		      		<button type="button" className="btn btn-info">Editar</button>
 		    	</td>
 
 		</React.Fragment>

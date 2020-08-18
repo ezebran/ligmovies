@@ -20,7 +20,6 @@ class CreateMoviesTable extends Migration
             $table->string('duracion');
             $table->string('sinopsis');
             $table->string('imagen');
-
             $table->integer('ActorPrincipalID')->unsigned();
             $table->foreign('ActorPrincipalID')->references('id')->on('actors');
 
